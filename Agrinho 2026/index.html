@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoStation Smart</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="header" aria-label="Cabeçalho principal">
+    <div class="container header-content">
+
+      <div class="logo-area">
+        <h1 class="logo">EcoStation Smart</h1>
+        <p class="tagline">
+          Monitoramento ambiental inteligente em tempo real
+        </p>
+      </div>
+
+      <!-- CONTROLES DE ACESSIBILIDADE -->
+      <nav class="accessibility-controls" aria-label="Controles de acessibilidade">
+        <button id="increase-font" aria-label="Aumentar fonte">
+          A+
+        </button>
+
+        <button id="decrease-font" aria-label="Diminuir fonte">
+          A-
+        </button>
+
+        <button id="contrast-toggle" aria-label="Ativar alto contraste">
+          Alto Contraste
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <main>
+
+    <section class="hero reveal" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <article class="hero-content">
+          <h2 id="hero-title">
+            Tecnologia sustentável para monitoramento ambiental
+          </h2>
+
+          <p>
+            Uma estação inteligente capaz de monitorar temperatura,
+            umidade do ar, umidade do solo e luminosidade em tempo real.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#sensores" class="btn-primary">
+              Explorar Sensores
+            </a>
+
+            <a href="#dashboard" class="btn-secondary">
+              Ver Dashboard
+            </a>
+          </div>
+        </article>
+
+        <article class="hero-card" aria-label="Painel de dados ambientais">
+          <div class="mini-dashboard">
+
+            <div class="dashboard-item">
+              <span>🌡️</span>
+              <h3>24°C</h3>
+              <p>Temperatura</p>
+            </div>
+
+            <div class="dashboard-item">
+              <span>💧</span>
+              <h3>68%</h3>
+              <p>Umidade do Ar</p>
+            </div>
+
+            <div class="dashboard-item">
+              <span>🌱</span>
+              <h3>45%</h3>
+              <p>Solo</p>
+            </div>
+
+            <div class="dashboard-item">
+              <span>☀️</span>
+              <h3>720 lx</h3>
+              <p>Luminosidade</p>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SENSORES DINÂMICOS
+    ========================== -->
+    <section
+      id="sensores"
+      class="features reveal"
+      aria-labelledby="features-title"
+    >
+
+      <div class="container">
+
+        <h2 id="features-title">
+          Sensores Inteligentes
+        </h2>
+
+        <div
+          id="features-grid"
+          class="features-grid"
+          aria-live="polite"
+        >
+          <!-- Renderizado via JS -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         CARROSSEL
+    ========================== -->
+    <section
+      class="carousel-section reveal"
+      aria-labelledby="carousel-title"
+    >
+
+      <div class="container">
+
+        <h2 id="carousel-title">
+          Aplicações da Plataforma
+        </h2>
+
+        <div class="carousel">
+
+          <button
+            class="carousel-btn prev"
+            aria-label="Slide anterior"
+          >
+            ◀
+          </button>
+
+          <div class="carousel-track-container">
+
+            <div
+              class="carousel-track"
+              id="carousel-track"
+              aria-live="polite"
+            >
+              <!-- Slides via JS -->
+            </div>
+
+          </div>
+
+          <button
+            class="carousel-btn next"
+            aria-label="Próximo slide"
+          >
+            ▶
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         ACCORDION
+    ========================== -->
+    <section
+      class="faq reveal"
+      aria-labelledby="faq-title"
+    >
+
+      <div class="container">
+
+        <h2 id="faq-title">
+          Perguntas Frequentes
+        </h2>
+
+        <div id="accordion-container">
+          <!-- Accordion via JS -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+    <section
+      id="dashboard"
+      class="dashboard reveal"
+      aria-labelledby="dashboard-title"
+    >
+
+      <div class="container">
+
+        <h2 id="dashboard-title">
+          Dashboard Inteligente
+        </h2>
+
+        <div class="dashboard-grid">
+
+          <article class="dashboard-panel">
+            <h3>Dados em Tempo Real</h3>
+            <p>
+              Visualização instantânea dos sensores com atualização contínua.
+            </p>
+          </article>
+
+          <article class="dashboard-panel">
+            <h3>Alertas Inteligentes</h3>
+            <p>
+              Receba notificações automáticas sobre alterações ambientais.
+            </p>
+          </article>
+
+          <article class="dashboard-panel">
+            <h3>Histórico de Dados</h3>
+            <p>
+              Armazene informações ambientais para análise futura.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+
+      <p>
+        © 2026 EcoStation Smart — Tecnologia sustentável e acessível.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
